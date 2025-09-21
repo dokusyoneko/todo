@@ -1,0 +1,130 @@
+
+.todo__created__item{
+    padding-left: 20px;
+    color: rgb(60, 85, 35);
+    background-color: rgb(188, 235, 214);
+    font-size: 18px;
+}
+
+.main__todo__content{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 60px 15px;
+
+}
+
+.create__form{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main__text__item{
+    width: 70%;
+}
+
+.main__text__item__input{
+    padding: 10px;
+    width: 100%;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.todo__button{
+    width: 20%;
+}
+
+.todo__button__submit{
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.main__content__heading{
+    flex: none;
+}
+
+.todo__table{
+    margin: 30px auto;
+    width: 70%;
+    text-align: left;
+}
+
+.todo__table__inner{
+    width: 100%;
+}
+
+.todo__table__row{
+    border-bottom: 1px solid #ddd;
+}
+
+.todo__table__header{
+    padding: 12px;
+    width: 20%;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.todo__table__item{
+    border-bottom: 1px solid #ddd;
+}
+
+.todo__table__item:first-of-type{
+    padding: 12px;
+    width: 90%;
+}
+
+.update__form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.update__form__item{
+    width: 80%;
+    line-height: 50%;
+}
+
+.update___form__item__input{
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.update__form__button{
+    width: 50px;
+}
+
+.update__form__button__submit{
+    padding: 5px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.delete__form__button{
+    width: 50px;
+}
+
+.delete__form__button__submit{
+    padding: 5px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
