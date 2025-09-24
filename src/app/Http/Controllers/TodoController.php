@@ -14,7 +14,6 @@ class TodoController extends Controller
     {
         $todos = Todo::all();
         return view('index', compact('todos'));
-
     }
 
     public function store(TodoRequest $request)
