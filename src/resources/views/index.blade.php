@@ -31,7 +31,10 @@
             @csrf
                 <div class="create__form__item">
                     <input class="create__form__item__input" type="text" name="content" value="{{ old('content') }}">
-                    <select class="create__form__item__select">
+                    <select class="create__form__item__select" name="category_id">
+                        @foreach ($categories as $category)
+                        <option value="{{ $category['id'] }}">{{ $category['name'] }}</option>
+                        @endforeach
                         <option value="">カテゴリ</option>
                     </select>
                 </div>
@@ -42,12 +45,15 @@
             <div class="section__title">
             <h2>Todo検索</h2>
             </div>
-            <form class="search__form">
+            <form class="search__form" action="/todos/search" method="get">
             @csrf
                 <div class="search__form__item">
-                    <input class="search__form__item__input" type="text">
-                    <select class="search__form__item__select">
+                    <input class="search__form__item__input" type="text" name="keyword" value="{{ old('keyword') }}">
+                    <select class="search__form__item__select" name="category_id">
                         <option value="">カテゴリ</option>
+                        @foreach ($categories as $category)
+                        <option value="{{ $category['id'] }}">{{ $category['name'] }}</option>
+                        @endforeach
                     </select>
                 </div>
                 <div class="search__form__button">
@@ -74,7 +80,7 @@
                                     <input type="hidden" name="id" value="{{ $todo['id'] }}">
                                 </div>
                                 <div class="update__form__item">
-                                    <p class="update__form__item-p">Category 1</p>
+                                    <p class="update-form__itme-p">{{ $todo['category']['name'] }}</p>
                                 </div>
                                 <div class="update__form__button">
                                     <button class="update__form__button__submit" type="submit">更新</button>
