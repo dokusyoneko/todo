@@ -11,7 +11,7 @@ class TodoController extends Controller
 {
     public function index()
     {
-        $todos = Todo::with('category')->get();
+        $todos = Todo::with('category')->paginate(5);
         $categories = Category::all();
         return view('index', compact('todos', 'categories'));
     }

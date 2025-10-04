@@ -32,17 +32,19 @@
     margin-bottom: 15px;
     width: 70%;
     text-align: center;
+    gap: 1rem;
 }
 
 .create__form__item, .search__form__item{
     display: flex;
-    width:80%;
-    padding: 0px 15px 0px 15px;
+    width:70%;
+    gap: 12px;
+
 }
 
 .create__form__item__input, .search__form__item__input{
     padding: 10px;
-    width: 70%;
+    width: 80%;
     height: 20px;
     border: 1px solid #ddd;
     border-radius: 3px;
@@ -96,11 +98,23 @@
 }
 
 .todo-table__header-span {
+    width: 40px;
+    margin-right: 40%;
+    margin-left: 10px;
+}
+.category-table__header-span {
+    width: 40px;
     margin-right: 40%;
 }
 
+
+
 .todo__table__item{
     border-bottom: 1px solid #ddd;
+    padding: 12px;
+    width: 20%;
+    text-align: left;
+
 }
 
 .todo__table__item:first-of-type{
@@ -123,6 +137,7 @@
     width: 100%;
     outline: none;
     border: none;
+    font-size: 15px;
 }
 
 .update-form__item-p {
@@ -156,5 +171,14 @@
     color: white;
     background-color: red;
     cursor: pointer;
+}
+.paginate{
+    text-align: center;
+    margin-top: 30px;
+}
+
+svg.w-5.h-5{
+    width: 30px;
+    height: 30px;
 }
 

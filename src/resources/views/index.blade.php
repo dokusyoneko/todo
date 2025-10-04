@@ -66,7 +66,7 @@
                     <tr class="todo__table__row">
                         <th class="todo-table__header">
                         <span class="todo-table__header-span">Todo</span>
-                        <span class="todo-table__header-span">カテゴリ</span>
+                        <span class="category-table__header-span">カテゴリ</span>
                         </th>
                     </tr>
                     @foreach ($todos as $todo)
@@ -100,6 +100,10 @@
                     </tr>
                     @endforeach
                 </table>
+                <!-- ページリンク -->
             </div>
+                <div class="paginate">
+                    {{ $todos->links() }}
+                </div>
         </div>
 @endsection
